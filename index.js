@@ -42,6 +42,7 @@ const typeDefs = gql`
     type Query{
         welcome: String
         localizations: [Localization]
+        localization(id: String): Localization
     }
 
     type Localization{
@@ -60,6 +61,10 @@ const resolvers = {
         },
         localizations: () => {
             return localizations
+        },
+        localization: (_, args) => {
+          const id = args.id
+          return localizations.filter(loc => loc.id == id)[0]
         }
     }
 }
