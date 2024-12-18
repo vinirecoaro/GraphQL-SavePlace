@@ -2,9 +2,11 @@ import { ApolloServer} from "apollo-server";
 import typeDefs from "./src/schemas.js";
 import localizations from "./src/database.js";
 import Query from "./src/resolvers/query.js";
+import Mutation from "./src/resolvers/mutation.js";
 
 const resolvers = {
-    Query
+    Query,
+    Mutation
 }
 
 const context = {

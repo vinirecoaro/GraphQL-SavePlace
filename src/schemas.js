@@ -7,6 +7,26 @@ const typeDefs = gql`
         localization(id: String): Localization
     }
 
+    type Mutation {
+        addLocalization(localization: addLocalizationInput): Localization!
+        updateLocalization(localization: updateLocalizationInput): Localization!
+    }
+
+    input addLocalizationInput {
+        name: String    
+        latitude: String
+        longitude: String
+        pinColor: String
+    }
+
+    input updateLocalizationInput{
+        id: String
+        name: String    
+        latitude: String
+        longitude: String
+        pinColor: String
+    }
+
     type Localization{
         id: String
         name: String    
