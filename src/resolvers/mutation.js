@@ -19,6 +19,16 @@ const Mutation = {
             }
         }
         return null
+    },
+    deleteLocalization: (_, args, context) => {
+        const {id} = args
+        console.log(id)
+        const {localizations} = context
+        let locs = localizations.filter((loc) => loc.id !== id)
+        localizations.length = 0
+        localizations.push(...locs)
+        console.log(localizations)
+        return true
     }
 }
 

@@ -1,4 +1,4 @@
-const localizations = [
+let localizations = [
     {
       id: "1",
       name: "Central Park",
@@ -34,6 +34,41 @@ const localizations = [
       longitude: "-43.210487",
       pinColor: "purple",
     },
+    {
+      id: "6",
+      name: "Praia de Copacabana",
+      latitude: -22.971964,
+      longitude: -43.182543,
+      pinColor: "yellow"
+    },
+    {
+      id: "7",
+      name: "Parque Ibirapuera",
+      latitude: -23.587416,
+      longitude: -46.657634,
+      pinColor: "purple"
+    },
+    {
+      id: "8",
+      name: "Pelourinho",
+      latitude: -12.971421,
+      longitude: -38.510806,
+      pinColor: "red"
+    },
+    {
+      id: "9",
+      name: "Lençóis Maranhenses",
+      latitude: -2.539110,
+      longitude: -43.115280,
+      pinColor: "blue"
+    },
+    {
+      id: "10",
+      name: "Cristo Redentor",
+      latitude: -22.951916,
+      longitude: -43.210487,
+      pinColor: "green"
+    }
   ];
 
   export default localizations
